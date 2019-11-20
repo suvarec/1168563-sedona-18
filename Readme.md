@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Никитин](https://up.htmlacademy.ru/adaptive/18/user/1168563).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Беляев](https://https://htmlacademy.ru/profile/id691043).
 
 ---
 
