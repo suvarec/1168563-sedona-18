@@ -1,0 +1,48 @@
+<<<<<<< HEAD:source/less/blocks/scaffolding.less
+=======
+@import "../../helpers/variables.less";
+
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("/source/fonts/ptsans.woff2") format("woff2"), url("/source/fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("/source/fonts/ptsansbold.woff2") format("woff2"), url("/source/fonts/ptsansbold.woff") format("woff");
+}
+
+>>>>>>> 73466d45e748cd46e1f135e2f0b524701617e4d8:source/less/blocks/block_index/scaffolding.less
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+
+  font-family: @sans;
+  font-style: normal;
+  font-size: 1,13rem;
+  line-height: 1,69rem;
+
+  color: @black;
+  background-color: @white;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
