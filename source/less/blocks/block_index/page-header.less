@@ -1,24 +1,13 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  &__logo {
-    width: 320px;
-    min-height: 55px;
-    order: 0;
-    .logo__image {
-      align-self: center;
-    }
-  }
 
-  .main-nav {
-    margin: 0;
-    padding: 0;
-    order: -1;
-  }
-  &__slogan {
-    margin: 0;
-    padding: 0;
-    order: 1;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    min-height: 50px;
+    order: 0;
   }
 }
 
@@ -26,53 +15,23 @@
   position: relative;
   width: 320px;
   min-height: 220px;
-   &__list {
-     margin: 0;
-     padding: 0;
-     list-style: none;
-     text-align: center;
-    }
+  order: -1;
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
   }
-
-.main-nav__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-
-  display: block;
-  width: 70px;
-  height: 50px;
-
-  background-color: #6a4d38;
-
-  cursor: pointer;
-  border: none;
-
-  &:hover,
-  &:active {
-    background-color: #624530;
-  }
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-
-  position: absolute;
-  top: 15px;
-  left: 17px;
-
-  width: 36px;
-  height: 2px;
-
-  background-color: #ffffff;
-  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
 
 .site-list__item {
   margin: 0;
   padding: 0;
-  background-color: #81b3d2;
+  background-color: @bg-color-secondary;
+  border-bottom: 1px solid @border-color;
+  &:last-of-type {
+    border-bottom: none;
+  }
 }
 
 .site-list__link {
@@ -81,10 +40,59 @@
 
   text-transform: uppercase;
   text-decoration: none;
-
-  border-bottom: 1px solid dimgrey;
-  color: @color-secondary;
+  color: @bg-color-main;
 }
 
+.page-header__slogan {
+  position: relative;
+  order: 1;
+}
 
+.header-slogan__text {
+  display: flex;
+  flex-direction: column;
+  &--first {
+    display: inline-block;
+    width: 320px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    color: @bg-color-secondary;
+  }
+  &--second {
+    position: absolute;
+    top: 30%;
+    left: 30%;
 
+    font-style: italic;
+    color: saddlebrown;
+  }
+  &--third {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    margin-top: 10px;
+
+    font-size: 70px;
+    color: @bg-color-main;
+  }
+  &--fourth {
+    position: absolute;
+    top: 60%;
+    left: 25%;
+
+    font-style: italic;
+    color: @bg-color-main;
+  }
+  &--fifth {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    margin-top: 10px;
+
+    font-style: italic;
+    color: @bg-color-main;
+  }
+}
